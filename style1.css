@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    transition: 1s ease-out;
+    transition-delay: 570ms;
+    font-family: 'Montserrat';
+    color: #000F33;
+    width: 100vw;
+    overflow-x: hidden;
+    height: 200vh;
+    background-color: #CCDBFF;
+}
+
+:root {
+    --maincolor: #CCDBFF;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #CCDBFF;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--maincolor);
+}
+
+
+/*-----------------BELOW IS PRELOADER-----------------*/
+
+.preloader {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #CCDBFF 100%, #CCDBFF 80%, #160B1E 60%, #2C0E29 40%, #400F2F 40%, #511036 48%, #3E0F2F 56%, #290E26 56%, #100C1D 8.32%, #020C17 8.32%);
+    /*to be removed*/
+}
+
+.preloadervideoblock {
+    flex-shrink: 20%;
+    transform: scale(1);
+    padding-left: 3vw;
+}
+
+.preloadervdo {
+    filter: contrast(100%) brightness(100%);
+    width: calc(23vw + 100px);
+}
+
+.preloadertext {
+    text-align: center;
+    padding-right: 9px;
+    background: rgb(22, 11, 30);
+    background: linear-gradient(90deg, #1655F2 14%, #F5F8FF 49%, #FD6420 85%);
+    background-size: 200% auto;
+    color: #CCDBFF;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2s linear infinite;
+    transform: translateY(2vh);
+    font-size: calc(10px + 2vh + 2vw);
+}
+
+@keyframes shine {
+    from {
+        background-position: 200% center;
+    }
+}
+
+.endpreloadopacity {
+    opacity: 0;
+    transition: 1s;
+}
+
+.nav_beforepreload {
+    display: none;
+}
+
+
+/*-----------------ABOVE WAS PRELOADER-------------------*/
+
+
+/*----------------------Header Below-----------------------*/
+
+.homepage {
+    display: grid;
+    grid-template-columns: repeat(20, 5vw);
+    grid-template-rows: repeat(18, 4vh);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.navi {
+    z-index: 4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    transform: scale(1.01);
+    background: transparent;
+}
+
+.nav-link {
+    color: #6692FF !important;
+    border-radius: 9px;
+    font-weight: 900;
+    
+}
+
+.navbar-toggler {
+    background: #6692FF !important;
+    border-radius: 9px;
+}
+
+.active {
+    background: #6692FF;
+    color: black !important;
+    font-weight: 800;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    background: #6692FF;
+    color: black !important;
+    border-radius: 9px;
+}
+
+.header {
+    float: left;
+    grid-column-start: 1;
+    grid-column-end: 25;
+    grid-row-start: 1;
+    grid-row-end: 25;
+    width: 100%;
+    position: relative;
+    box-shadow: 8px rgba(0, 0, 0, 0.24);
+    background: #CCDBFF;
+    overflow: hidden;
+}
+
+.headervdocontainer {
+    z-index: 0;
+    background: #CCDBFF;
+    transform: scale(1);
+    top: 0;
+    left: 0;
+    width: 103vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.headervdo {
+    transform: scale(1.5);
+    opacity: 0;
+    width: 100%;
+}
+
+.headervdo_afterpreload {
+    transition: ease-in 5s;
+    opacity: 100;
+}
+
+.ecellLogo {
+    z-index: 5;
+    padding: 25px;
+    margin-left: calc(2vh + 5px);
+    background: url("ew.png");
+    background-repeat: no-repeat;
+    float: top;
+    background-size: cover;
+    box-sizing: border-box;
+    position: fixed;
+    width: calc(60px + 3vw);
+    height: calc(60px + 3vw);
+    top: 3%;
+    left: 0;
+    transform: translate(-1vw, -2vh);
+    clip-path: circle(50.0% at 50% 50%);
+    cursor: pointer;
+}
+
+.saffLogo {
+    z-index: 5;
+    padding: 25px;
+    margin-left: calc(2vh + 5px);
+    background: url("saff.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    box-sizing: border-box;
+    position: fixed;
+    width: 150px;
+    height: 50px;
+    bottom: 3%;
+    left: 0;
+    cursor: pointer;
+}
+
+.necLogo {
+    z-index: 5;
+    padding: 25px;
+    background: url("nec (2).png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 3%;
+    right: 2%;
+    cursor: pointer;
+}
+
+.heading {
+    font-size: calc(1vh + 4vw);
+    font-family: 'Montserrat';
+    position: absolute;
+    top: 35%;
+    margin-left: 35vw;
+    font-weight: 600;
+    letter-spacing: calc(1vh);
+    color: #000F33;
+    opacity: 100;
+    transform: scale(1.05);
+    text-align: center;
+    /* below shine */
+    background: #000F33;
+    background: radial-gradient(circle, #000F33 16%, rgba(255, 201, 0, 1) 32%, rgba(0, 0, 0, 1) 64%);
+    background-size: 200% auto;
+    font-family: 'Montserrat';
+    color: #000F33;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+}
+
+.tagline {
+    box-sizing: border-box;
+    font-size: calc(1vh + 5px + 2vw);
+    transform: scale(0.8);
+    font-family: 'Montserrat';
+    position: absolute;
+    top: 60%;
+    right: 24vw;
+    margin-left: 16vw;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 1vh;
+    color: #000F33;
+    opacity: 100;
+}
+
+
+/*----------------------Header Up---------------------*/
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social * {
+    flex: 1;
+    padding: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.instagram {
+    background: url("https://sm.ign.com/ign_in/screenshot/default/ig-glyph001-74am_dp6a.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: saturate(1);
+    transition: all ease-in 250ms;
+}
+
+.facebook {
+    background: url("fblogo.png") no-repeat;
+    background-position: center;
+    background-size: 125%;
+    transition: ease-in-out all 250ms;
+    filter: saturate(1);
+}
+
+.linkedin {
+    background: url("linkedin.png") no-repeat;
+    background-position: center;
+    background-size: 110%;
+    transition: ease-in-out all 250ms;
+    filter: saturate(1);
+}
+
+.twitter {
+    background: url("twitter.jpg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: black;
+    filter: saturate(1);
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+}
+
+.fa-brands fa-x-twitter {
+    background: url("twitter.jpg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+    filter: saturate(1);
+    transition: all 250ms ease-in;
+}
+
+@media only screen and (max-width: 700px) {
+    .instagram,
+    .twitter,
+    .facebook,
+    .linkedin {
+        filter: saturate(1);
+        background-size: 200%;
+    }
+}
+
+
+/*--------------------Mid_Body Below------------------*/
+
+.borderup {
+    background: transparent;
+    padding: 10px;
+    border-radius: 25px;
+    border-bottom: 2px #000F33 solid;
+    width: 63vw;
+    position: relative;
+    left: 17vw;
+}
+
+.borderdown {
+    background: transparent;
+    padding: 10px;
+    border-radius: 25px;
+    border-top: 2px #000F33 solid;
+    width: 63vw;
+    position: relative;
+    left: 17vw;
+}
+
+.midbody {
+    background: #CCDBFF;
+    font-family: 'Montserrat';
+}
+
+.quotegenerator {
+    position: relative;
+    font-family: 'Montserrat';
+    letter-spacing: 0.2em;
+}
+
+.quotegenerator * {
+    font-size: 1.1em;
+}
+
+.quote {
+    transition: 1s ease-in-out;
+}
+
+.writer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 1s ease-in-out;
+}
+
+.card-img {
+    opacity: 0.4;
+    
+}
+
+.dream:hover,
+.create:hover,
+.inspire:hover {
+    transition: 200ms all ease-in-out;
+    transform: scale(1.02);
+}
+
+
+/*-------------------Midbody Up-------------------*/
+
+
+/*------------------Footer Below------------------*/
+
+.footer {
+    background: #000F33;
+    font-family: 'Montserrat';
+}
+
+@media only screen and (max-width: 992px) {
+    .importantlinks {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+.importantlinks * {
+    font-family: 'Montserrat';
+    font-size: medium;
+    color: #6692FF;
+}
+
+.importantlinks a {
+    text-decoration: none;
+}
+
+.importantlinks a:hover {
+    text-decoration: underline;
+    color: #6692FF;
+}
+
+.mgg {
+    position: relative;
+    font-family: 'Montserrat';
+    letter-spacing: 0.2em;
+}
+
+.mgg * {
+    font-size: 1.1em;
+}
+
+.mg {
+    transition: 1s ease-in-out;
+}
+
+.mh {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 1s ease-in-out;
+}
+
+.dropdown-menu {
+    background-color: #6692FF;
+    border-radius: 12px;
+    width: 150px;
+}
+
+.dropdown-item {
+    background-color: #6692FF;
+    color: black !important;
+    border-radius: 12px;
+    padding: 10px 15px;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+    background-color: #6692FF;
+    color: black !important;
+    border-radius: 12px;
+    -webkit-text-fill-color: white;
+    font-weight: bold;
+}
+
+.detail-size{
+    font-size: 17px;
+}

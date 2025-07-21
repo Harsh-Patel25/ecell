@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - E-Cell SIT</title>
+    <meta name="description" content="Website for Entrepreneurship Cell, Saffrony Institute of Technology">
+    <meta name="keywords" content="Saffrony, Entrepreneur, Ecell, Entrepreneurship, SIT, ecell sit, ECell SIT, Ecell SIT, ECell sit">
+    <meta name="author" content="MAYANK RAJPUT, DHARMIK SOMPURA, SAMBHAV SHAH, TILAK PATEL, JAHANVI YADAV">
+    <meta name="copyright" content="E-Cell-SIT">
+    <meta name="language" content="en">
+    <meta name="category" content="Entrepreneurship, Events">
+    <meta name="coverage" content="Worldwide">
+    <meta name="rating" content="General">
+    <meta name="og:phone_number" content="+91704646100">
+    <meta name="og:country-name" content="India">
+    <meta name="og:region" content="Linch">
+    <meta name="og:site_name" content="Entrepreneurship Cell SIT">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About Us - Entrepreneurship Cell SIT">
+    <meta property="og:description" content="Website for Entrepreneurship Cell, Saffrony Institute of Technology">
+    <meta property="og:site_name" content="Entrepreneurship Cell SIT">
+    <meta itemprop="name" content="About Us - Entrepreneurship Cell SIT">
+    <meta itemprop="description" content="Website for Entrepreneurship Cell, Saffrony Institute of Technology">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="img/jpeg" href="ew.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body class="font-['Inter']">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <img src="ew.png" alt="E-Cell SIT Logo" class="w-10 h-10">
+                    <span class="text-xl font-bold text-gray-900">E-Cell SIT</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="landing.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Home</a>
+                    <a href="about.html" class="nav-link text-blue-600 font-medium transition-colors duration-300 active">About</a>
+                    <a href="events.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Events</a>
+                    <a href="team.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Team</a>
+                    <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Contact</a>
+                    <button id="joinBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105">
+                        Join Us
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-gray-700 hover:text-blue-600 transition-colors duration-300">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="md:hidden hidden">
+                <div class="py-4 space-y-4 border-t border-gray-200">
+                    <a href="landing.html" class="mobile-nav-link block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Home</a>
+                    <a href="about.html" class="mobile-nav-link block text-blue-600 font-medium transition-colors duration-300">About</a>
+                    <a href="events.html" class="mobile-nav-link block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Events</a>
+                    <a href="team.html" class="mobile-nav-link block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Team</a>
+                    <a href="contact.html" class="mobile-nav-link block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Contact</a>
+                    <button id="mobileJoinBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300">
+                        Join Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">About E-Cell SIT</h1>
+            <p class="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto">
+                We are the driving force behind innovation and entrepreneurship at Saffrony Institute of Technology.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <!-- Mission -->
+            <div class="bg-white rounded-xl p-8 shadow-lg mb-8">
+                <div class="text-center">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">
+                        <i class="fa fa-bullseye text-blue-600 mr-3"></i>Mission
+                    </h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        To inspire, educate and empower engineering students and faculty to inculcate a culture of entrepreneurship and develop skills to solve real world problems for a positive change in society.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Vision -->
+            <div class="bg-white rounded-xl p-8 shadow-lg mb-8">
+                <div class="text-center">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">
+                        <i class="fa fa-eye text-blue-600 mr-3"></i>Vision
+                    </h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        To be a leading E-Cell in Gujarat that fosters innovation and social impact through excellence in teaching, research and outreach by facilitating best of class resources & techniques in entrepreneurship.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Our Aim -->
+            <div class="bg-white rounded-xl p-8 shadow-lg mb-8">
+                <div class="text-center">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">
+                        <i class="fas fa-fire text-blue-600 mr-3"></i>Our Aim
+                    </h3>
+                    <p class="text-lg text-gray-700 leading-relaxed text-justify">
+                        At E-Cell SIT, we assert that there exists a deficiency in exposure to the societal aspects of entrepreneurship, or entrepreneurship in general, within Engineering College. Even if there are students harboring specific ideas they wish to pursue, the prevailing culture and demanding timetable of Engineering college might stifle the inclination to embark on something new. The fundamental inquiry that arises is:'Where to Commence?' A widely held notion characterizes us as 'The Leaders for Tomorrow'. E-Cell, however, subscribes to the concept of being 'The Leaders for Today'. Our objective is to nurture the requirements of youthful intellects and their concepts while actively seeking transformative change. As aspiring entrepreneurs originating from legal backgrounds, we endeavor to advocate for a culture of embracing risk and the associated principles, with the aspiration of effecting meaningful change. The overarching goal is to establish an environment conducive to the acquisition of entrepreneurial knowledge, particularly tailored for individuals with an exclusive legal background.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Core Values -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-star text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">IDEA</h3>
+                    <p class="text-gray-600">Research your idea. See if there's a demand. A lot of people have great ideas, but they don't know if there's a need for it. You also have to research your competition.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-pen-alt text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Create</h3>
+                    <p class="text-gray-600">Gathering tools to turn the makebelieve world to believe world and</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-jedi text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Inspire</h3>
+                    <p class="text-gray-600">Boosting confidence of those who are oppressed by those who cant think out of box. We aim to explore the wasteland of unknown with the courageous minds.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-star text-orange-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Innovate</h3>
+                    <p class="text-gray-600">"The best way to predict the future is to invent it."</p>
+                </div>
+            </div>
+
+            <!-- Why Us Section -->
+            <div class="bg-blue-50 rounded-xl p-8 md:p-12 mb-8">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                            <i class="fas fa-question text-blue-600 mr-3"></i>Why Us
+                        </h2>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            We at E-cell of Saffrony Institute of Technology aim to provide you with the knowledge and experience of those who are already on this path so that you can learn from what they have been through and then carve your own path. We may not seem to be as vast as ocean but we have started our journey down the mountain and will meet and discover more secrets, with no will to turn back. So, join the expedition of exploring the unknown of your creativity and let it flow.
+                        </p>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="whyus.jpeg" alt="Why Choose E-Cell SIT" class="rounded-lg shadow-lg max-w-md w-full">
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button id="missionBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+                    <i class="fas fa-eye mr-2"></i>Our Mission & Vision
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="ew.png" alt="E-Cell SIT Logo" class="w-8 h-8">
+                        <span class="text-xl font-bold">E-Cell SIT</span>
+                    </div>
+                    <p class="text-gray-400">Empowering students to become successful entrepreneurs through innovation and collaboration.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="landing.html" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition-colors duration-300">Events</a></li>
+                        <li><a href="team.html" class="text-gray-400 hover:text-white transition-colors duration-300">Team</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Events</h4>
+                    <ul class="space-y-2">
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition-colors duration-300">E-Summit</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition-colors duration-300">Eureka</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition-colors duration-300">ProTalks</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition-colors duration-300">Workshops</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with our latest events and opportunities.</p>
+                    <form id="newsletterForm" class="flex">
+                        <input type="email" placeholder="Your email" required class="flex-1 px-4 py-2 rounded-l-lg border-0 focus:ring-2 focus:ring-blue-500 text-gray-900">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg transition-colors duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 E-Cell SIT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Container -->
+    <div id="modalContainer" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div id="modalContent" class="bg-white rounded-xl p-6 max-w-md w-full mx-4 transform transition-all duration-300 scale-95 opacity-0">
+            <!-- Modal content will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg p-6 flex items-center space-x-3">
+            <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600"></div>
+            <span class="text-gray-700">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="landing.js"></script>
+</body>
+</html> 

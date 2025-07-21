@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS for additional styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Custom utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation classes */
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 0.6s ease-out;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 0.6s ease-out;
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+}
+
+.btn-secondary {
+  @apply bg-transparent border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105;
+}
+
+/* Custom card styles */
+.card {
+  @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2;
+}
+
+/* Custom gradient backgrounds */
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-bg-2 {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+/* Custom navbar styles */
+.navbar {
+  @apply fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300;
+}
+
+.navbar.scrolled {
+  @apply bg-white shadow-xl;
+}
+
+/* Mobile menu styles */
+.navbar-collapse {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    @apply absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-200 transform -translate-y-full opacity-0 pointer-events-none;
+  }
+  
+  .navbar-collapse.show {
+    @apply transform translate-y-0 opacity-100 pointer-events-auto;
+  }
+  
+  .navbar-nav {
+    @apply flex flex-col p-4 space-y-2;
+  }
+  
+  .nav-link {
+    @apply block py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors duration-300;
+  }
+  
+  .dropdown-menu {
+    @apply static bg-transparent shadow-none border-none p-0 ml-4;
+  }
+  
+  .dropdown-item {
+    @apply py-2 px-4 text-gray-600 hover:text-blue-600 hover:bg-transparent;
+  }
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+  @apply absolute top-full left-0 bg-white shadow-lg border border-gray-200 rounded-lg py-2 min-w-48 transform opacity-0 scale-95 pointer-events-none transition-all duration-200;
+}
+
+.dropdown-menu.show {
+  @apply opacity-100 scale-100 pointer-events-auto;
+}
+
+.dropdown-item {
+  @apply block w-full px-4 py-2 text-left text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors duration-200;
+}
+
+/* Custom hero section styles */
+.hero-section {
+  @apply min-h-screen flex items-center justify-center relative overflow-hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.hero-content {
+  @apply text-center text-white z-10 relative;
+}
+
+.hero-title {
+  @apply text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight;
+}
+
+.hero-subtitle {
+  @apply text-xl md:text-2xl mb-8 opacity-90 max-w-2xl mx-auto;
+}
+
+/* Custom section styles */
+.section-padding {
+  @apply py-16 md:py-20;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4;
+}
+
+.section-subtitle {
+  @apply text-lg text-gray-600 text-center max-w-2xl mx-auto mb-12;
+}
+
+/* Custom grid layouts */
+.grid-auto-fit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Custom image styles */
+.image-hover {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+/* Custom icon styles */
+.icon-gradient {
+  @apply bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full flex items-center justify-center;
+}
+
+/* Custom form styles */
+.form-input {
+  @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300;
+}
+
+.form-textarea {
+  @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-none;
+}
+
+/* Custom modal styles */
+.modal {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+}
+
+.modal-content {
+  @apply bg-white rounded-xl p-6 max-w-md w-full mx-4;
+}
+
+/* Modal animations */
+#modal-container {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-300;
+}
+
+#modal-container.hidden {
+  @apply opacity-0 pointer-events-none;
+}
+
+#modal-container:not(.hidden) {
+  @apply opacity-100 pointer-events-auto;
+}
+
+/* Custom loading animation */
+.loading {
+  @apply inline-block w-6 h-6 border-4 border-blue-600 border-t-transparent rounded-full animate-spin;
+}
+
+/* Custom tooltip styles */
+.tooltip {
+  @apply relative;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  @apply absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-gray-900 text-white text-sm rounded-lg opacity-0 pointer-events-none transition-opacity duration-300;
+}
+
+.tooltip:hover::after {
+  @apply opacity-100;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-700;
+}
+
+/* Custom focus styles */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
+
+/* Active navigation link styles */
+.nav-link.active {
+  @apply text-blue-600 font-semibold;
+}
+
+.nav-link.active::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform scale-x-100;
+}
+
+/* Button loading states */
+.btn:disabled {
+  @apply opacity-50 cursor-not-allowed transform-none;
+}
+
+/* Form validation styles */
+.form-input.border-red-500 {
+  @apply border-red-500 focus:ring-red-500;
+}
+
+/* Custom responsive utilities */
+@media (max-width: 768px) {
+  .hero-title {
+    @apply text-4xl;
+  }
+  
+  .hero-subtitle {
+    @apply text-lg;
+  }
+  
+  .section-title {
+    @apply text-2xl;
+  }
+  
+  /* Mobile menu improvements */
+  .navbar-toggler {
+    @apply border-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+  }
+  
+  .navbar-toggler-icon {
+    @apply transition-transform duration-300;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    @apply text-3xl;
+  }
+  
+  .hero-subtitle {
+    @apply text-base;
+  }
+  
+  .section-title {
+    @apply text-xl;
+  }
+}
+
+/* Custom dark mode support */
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    @apply bg-gray-900 text-white;
+  }
+  
+  .dark-mode .card {
+    @apply bg-gray-800 text-white;
+  }
+}
+
+/* Custom print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-break {
+    page-break-before: always;
+  }
+}
+
+/* Custom accessibility improvements */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Custom high contrast mode */
+@media (prefers-contrast: high) {
+  .high-contrast {
+    @apply border-2 border-black;
+  }
+}
+
+/* Custom reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Additional interactive styles */
+.hover-lift {
+  @apply transition-transform duration-300 hover:-translate-y-1;
+}
+
+.hover-glow {
+  @apply transition-shadow duration-300 hover:shadow-lg hover:shadow-blue-500/25;
+}
+
+.click-feedback {
+  @apply transition-transform duration-150 active:scale-95;
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Fade in animation for sections */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}

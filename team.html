@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - E-Cell SIT</title>
+    <meta name="description" content="Website for Entrepreneurship Cell, Saffrony Institute of Technology">
+    <meta name="keywords" content="Saffrony, Entrepreneur, Ecell, Entrepreneurship, SIT, ecell sit, ECell SIT, Ecell SIT, ECell sit">
+    <meta name="author" content="MAYANK RAJPUT, DHARMIK SOMPURA, SAMBHAV SHAH, TILAK PATEL, JAHANVI YADAV">
+    <meta name="copyright" content="E-Cell-SIT">
+    <meta name="language" content="en">
+    <meta name="category" content="Entrepreneurship, Events">
+    <meta name="coverage" content="Worldwide">
+    <meta name="rating" content="General">
+    <meta name="og:phone_number" content="+91704646100">
+    <meta name="og:country-name" content="India">
+    <meta name="og:region" content="Linch">
+    <meta name="og:site_name" content="Entrepreneurship Cell SIT">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Our Team - Entrepreneurship Cell SIT">
+    <meta property="og:description" content="Website for Entrepreneurship Cell, Saffrony Institute of Technology">
+    <meta property="og:site_name" content="Entrepreneurship Cell SIT">
+    <meta itemprop="name" content="Our Team - Entrepreneurship Cell SIT">
+    <meta itemprop="description" content="Website for Entrepreneurship Cell, Saffrony Institute of Technology">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="img/jpeg" href="ew.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body class="font-['Inter']">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <img src="ew.png" alt="E-Cell SIT Logo" class="w-10 h-10">
+                    <span class="text-xl font-bold text-gray-900">E-Cell SIT</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="landing.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Home</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">About</a>
+                    <a href="events.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Events</a>
+                    <a href="team.html" class="nav-link text-blue-600 font-medium transition-colors duration-300 active">Team</a>
+                    <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Contact</a>
+                    <button id="joinBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105">
+                        Join Us
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-gray-700 hover:text-blue-600 transition-colors duration-300">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="md:hidden hidden">
+                <div class="py-4 space-y-4 border-t border-gray-200">
+                    <a href="landing.html" class="mobile-nav-link block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Home</a>
+                    <a href="about.html" class="mobile-nav-link block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">About</a>
+                    <a href="events.html" class="mobile-nav-link block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Events</a>
+                    <a href="team.html" class="mobile-nav-link block text-blue-600 font-medium transition-colors duration-300">Team</a>
+                    <a href="contact.html" class="mobile-nav-link block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Contact</a>
+                    <button id="mobileJoinBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300">
+                        Join Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Meet Our Team</h1>
+            <p class="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto">
+                The passionate individuals driving innovation and entrepreneurship at E-Cell SIT.
+            </p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <!-- Core Team -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Core Team</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Meet the leadership team that guides E-Cell SIT towards excellence.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="text-center">
+                    <div class="w-32 h-32 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                        <img src="ourteam/Dhruv_Mavani-President.jpg" alt="Dhruv Mavani" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Dhruv Mavani</h3>
+                    <p class="text-blue-600 font-semibold mb-2">President</p>
+                    <p class="text-gray-600 text-sm">Leading the vision and strategy of E-Cell SIT</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-32 h-32 bg-gradient-to-r from-green-500 to-teal-600 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                        <img src="ourteam/MihirJoshi - E cell - VP2.JPG" alt="Mihir Joshi" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Mihir Joshi</h3>
+                    <p class="text-green-600 font-semibold mb-2">Vice President</p>
+                    <p class="text-gray-600 text-sm">Overseeing operations and team coordination</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-32 h-32 bg-gradient-to-r from-orange-500 to-red-600 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                        <img src="ourteam/Chandrashekhar-Tech-Head.jpg" alt="Chandrashekhar" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Chandrashekhar</h3>
+                    <p class="text-orange-600 font-semibold mb-2">Tech Head</p>
+                    <p class="text-gray-600 text-sm">Managing technical initiatives and digital presence</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-32 h-32 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
+                        <img src="ourteam/Astha_Sadhu Events, PR & Hospitality.jpg" alt="Astha Sadhu" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Astha Sadhu</h3>
+                    <p class="text-purple-600 font-semibold mb-2">Events Head</p>
+                    <p class="text-gray-600 text-sm">Organizing events and managing partnerships</p>
+                </div>
+            </div>
+
+            <!-- Team Categories -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Events Team -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-calendar-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Events Team</h3>
+                    <p class="text-gray-600 mb-4">Organizing and managing all E-Cell events, workshops, and competitions.</p>
+                    <ul class="text-gray-600 text-sm space-y-1">
+                        <li>• Event Planning & Execution</li>
+                        <li>• Workshop Coordination</li>
+                        <li>• Competition Management</li>
+                        <li>• Venue & Logistics</li>
+                    </ul>
+                </div>
+
+                <!-- Tech Team -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-code text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Tech Team</h3>
+                    <p class="text-gray-600 mb-4">Managing digital presence, website, and technical initiatives.</p>
+                    <ul class="text-gray-600 text-sm space-y-1">
+                        <li>• Website Development</li>
+                        <li>• Digital Marketing</li>
+                        <li>• Social Media Management</li>
+                        <li>• Technical Support</li>
+                    </ul>
+                </div>
+
+                <!-- Marketing Team -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bullhorn text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Marketing Team</h3>
+                    <p class="text-gray-600 mb-4">Promoting E-Cell activities and building brand awareness.</p>
+                    <ul class="text-gray-600 text-sm space-y-1">
+                        <li>• Brand Promotion</li>
+                        <li>• Content Creation</li>
+                        <li>• Public Relations</li>
+                        <li>• Outreach Programs</li>
+                    </ul>
+                </div>
+
+                <!-- Content Team -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-pen-fancy text-orange-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Content Team</h3>
+                    <p class="text-gray-600 mb-4">Creating engaging content for all platforms and communications.</p>
+                    <ul class="text-gray-600 text-sm space-y-1">
+                        <li>• Content Writing</li>
+                        <li>• Social Media Posts</li>
+                        <li>• Newsletter Creation</li>
+                        <li>• Documentation</li>
+                    </ul>
+                </div>
+
+                <!-- Design Team -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-palette text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Design Team</h3>
+                    <p class="text-gray-600 mb-4">Creating visual content and maintaining brand identity.</p>
+                    <ul class="text-gray-600 text-sm space-y-1">
+                        <li>• Graphic Design</li>
+                        <li>• Brand Identity</li>
+                        <li>• Event Posters</li>
+                        <li>• Visual Content</li>
+                    </ul>
+                </div>
+
+                <!-- Operations Team -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Operations Team</h3>
+                    <p class="text-gray-600 mb-4">Managing day-to-day operations and administrative tasks.</p>
+                    <ul class="text-gray-600 text-sm space-y-1">
+                        <li>• Administrative Tasks</li>
+                        <li>• Resource Management</li>
+                        <li>• Team Coordination</li>
+                        <li>• Process Optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button id="meetTeamBtn" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+                    <i class="fas fa-users mr-2"></i>Meet Full Team
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Values Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Team Values</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    The principles that guide our team and drive our success.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Collaboration</h3>
+                    <p class="text-gray-600">Working together to achieve common goals and foster innovation.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-lightbulb text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Innovation</h3>
+                    <p class="text-gray-600">Embracing new ideas and creative solutions to challenges.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Passion</h3>
+                    <p class="text-gray-600">Dedicated commitment to entrepreneurship and student development.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-star text-orange-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Excellence</h3>
+                    <p class="text-gray-600">Striving for the highest quality in everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="ew.png" alt="E-Cell SIT Logo" class="w-8 h-8">
+                        <span class="text-xl font-bold">E-Cell SIT</span>
+                    </div>
+                    <p class="text-gray-400">Empowering students to become successful entrepreneurs through innovation and collaboration.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="landing.html" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition-colors duration-300">Events</a></li>
+                        <li><a href="team.html" class="text-gray-400 hover:text-white transition-colors duration-300">Team</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Events</h4>
+                    <ul class="space-y-2">
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition-colors duration-300">E-Summit</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition-colors duration-300">Eureka</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition-colors duration-300">ProTalks</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition-colors duration-300">Workshops</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with our latest events and opportunities.</p>
+                    <form id="newsletterForm" class="flex">
+                        <input type="email" placeholder="Your email" required class="flex-1 px-4 py-2 rounded-l-lg border-0 focus:ring-2 focus:ring-blue-500 text-gray-900">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg transition-colors duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 E-Cell SIT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Container -->
+    <div id="modalContainer" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div id="modalContent" class="bg-white rounded-xl p-6 max-w-md w-full mx-4 transform transition-all duration-300 scale-95 opacity-0">
+            <!-- Modal content will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg p-6 flex items-center space-x-3">
+            <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600"></div>
+            <span class="text-gray-700">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="landing.js"></script>
+</body>
+</html> 

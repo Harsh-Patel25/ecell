@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - E-Cell SIT</title>
+    <meta name="description" content="Website for Entrepreneurship Cell, Saffrony Institute of Technology">
+    <meta name="keywords" content="Saffrony, Entrepreneur, Ecell, Entrepreneurship, SIT, ecell sit, ECell SIT, Ecell SIT, ECell sit">
+    <meta name="author" content="MAYANK RAJPUT, DHARMIK SOMPURA, SAMBHAV SHAH, TILAK PATEL, JAHANVI YADAV">
+    <meta name="copyright" content="E-Cell-SIT">
+    <meta name="language" content="en">
+    <meta name="category" content="Entrepreneurship, Events">
+    <meta name="coverage" content="Worldwide">
+    <meta name="rating" content="General">
+    <meta name="og:phone_number" content="+91704646100">
+    <meta name="og:country-name" content="India">
+    <meta name="og:region" content="Linch">
+    <meta name="og:site_name" content="Entrepreneurship Cell SIT">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Events - Entrepreneurship Cell SIT">
+    <meta property="og:description" content="Website for Entrepreneurship Cell, Saffrony Institute of Technology">
+    <meta property="og:site_name" content="Entrepreneurship Cell SIT">
+    <meta itemprop="name" content="Events - Entrepreneurship Cell SIT">
+    <meta itemprop="description" content="Website for Entrepreneurship Cell, Saffrony Institute of Technology">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="img/jpeg" href="ew.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body class="font-['Inter']">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <img src="ew.png" alt="E-Cell SIT Logo" class="w-10 h-10">
+                    <span class="text-xl font-bold text-gray-900">E-Cell SIT</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="landing.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Home</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">About</a>
+                    <a href="events.html" class="nav-link text-blue-600 font-medium transition-colors duration-300 active">Events</a>
+                    <a href="team.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Team</a>
+                    <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Contact</a>
+                    <button id="joinBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105">
+                        Join Us
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-gray-700 hover:text-blue-600 transition-colors duration-300">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="md:hidden hidden">
+                <div class="py-4 space-y-4 border-t border-gray-200">
+                    <a href="landing.html" class="mobile-nav-link block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Home</a>
+                    <a href="about.html" class="mobile-nav-link block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">About</a>
+                    <a href="events.html" class="mobile-nav-link block text-blue-600 font-medium transition-colors duration-300">Events</a>
+                    <a href="team.html" class="mobile-nav-link block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Team</a>
+                    <a href="contact.html" class="mobile-nav-link block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Contact</a>
+                    <button id="mobileJoinBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300">
+                        Join Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Our Events</h1>
+            <p class="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto">
+                Join our exciting events and workshops to enhance your entrepreneurial skills.
+            </p>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
+                        <img src="E-SUMMIT.jpeg" alt="E-Summit" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">E-Summit</h3>
+                        <p class="text-gray-600 mb-4">Achieved 18th rank in the National Entrepreneurship Challenge 2023 and were invited to IIT Bombay for further competitions, where our entire team participated in the E-Summit.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">2023</span>
+                            <button class="event-register-btn bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300" data-event="E-Summit">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center">
+                        <img src="Protalks.jpg" alt="ProTalks" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Entrepreneur Mentorship</h3>
+                        <p class="text-gray-600 mb-4">Hosted ProTalks, where we invited CEOs Shyam Hathalia and Hardik Tarpara to mentor our members, leading to successful placements for several batchmates.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">2023</span>
+                            <button class="event-register-btn bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300" data-event="Entrepreneur Mentorship">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-r from-orange-500 to-red-600 flex items-center justify-center">
+                        <img src="E2024.jpg" alt="Eureka 2024" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Eureka 2024</h3>
+                        <p class="text-gray-600 mb-4">In Eureka 2024, our top two teams, Team Pixel and Team ArogyaMitra, qualified at the zonal level and went on to compete at IIT Bombay.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">2024</span>
+                            <button class="event-register-btn bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300" data-event="Eureka 2024">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center">
+                        <img src="LinkedinPresentation.jpg" alt="LinkedIn Session" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Socializing in Corporate World</h3>
+                        <p class="text-gray-600 mb-4">Conducted a LinkedIn Optimization Session that helped many of our batchmates and juniors enhance their profiles, earning them positive feedback and increased visibility.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">2024</span>
+                            <button class="event-register-btn bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300" data-event="LinkedIn Session">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-r from-indigo-500 to-blue-600 flex items-center justify-center">
+                        <img src="E23.jpg" alt="Eureka 2023" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Eureka 2023</h3>
+                        <p class="text-gray-600 mb-4">In Eureka 2023, our winning team, Team Vidhyut, advanced to compete with top state teams at IIT Bombay.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">2023</span>
+                            <button class="event-register-btn bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300" data-event="Eureka 2023">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-r from-yellow-500 to-orange-600 flex items-center justify-center">
+                        <img src="compendium.jpg" alt="Compendium" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Compendium</h3>
+                        <p class="text-gray-600 mb-4">Dandelions, one of the beautiful flowers, need a push for their seeds to disperse so that one more child may smile upon seeing it.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">2024</span>
+                            <button class="event-register-btn bg-yellow-600 hover:bg-yellow-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300" data-event="Compendium">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <button id="viewAllEventsBtn" class="bg-gray-900 hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+                    <i class="fas fa-calendar-alt mr-2"></i>View All Events
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Upcoming Events</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Mark your calendars for these exciting upcoming events and workshops.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-laptop-code text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Startup Workshop</h3>
+                        <p class="text-gray-600 mb-4">Learn the fundamentals of building a successful startup from industry experts.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Dec 15, 2024</span>
+                            <button class="event-register-btn bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300" data-event="Startup Workshop">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center">
+                        <i class="fas fa-pitch text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Pitch Competition</h3>
+                        <p class="text-gray-600 mb-4">Present your innovative ideas and win exciting prizes worth ₹50,000.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Dec 20, 2024</span>
+                            <button class="event-register-btn bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300" data-event="Pitch Competition">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-gradient-to-r from-orange-500 to-red-600 flex items-center justify-center">
+                        <i class="fas fa-network-wired text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Networking Meet</h3>
+                        <p class="text-gray-600 mb-4">Connect with successful entrepreneurs and expand your professional network.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Dec 25, 2024</span>
+                            <button class="event-register-btn bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300" data-event="Networking Meet">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="ew.png" alt="E-Cell SIT Logo" class="w-8 h-8">
+                        <span class="text-xl font-bold">E-Cell SIT</span>
+                    </div>
+                    <p class="text-gray-400">Empowering students to become successful entrepreneurs through innovation and collaboration.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="landing.html" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition-colors duration-300">Events</a></li>
+                        <li><a href="team.html" class="text-gray-400 hover:text-white transition-colors duration-300">Team</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Events</h4>
+                    <ul class="space-y-2">
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition-colors duration-300">E-Summit</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition-colors duration-300">Eureka</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition-colors duration-300">ProTalks</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition-colors duration-300">Workshops</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with our latest events and opportunities.</p>
+                    <form id="newsletterForm" class="flex">
+                        <input type="email" placeholder="Your email" required class="flex-1 px-4 py-2 rounded-l-lg border-0 focus:ring-2 focus:ring-blue-500 text-gray-900">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg transition-colors duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 E-Cell SIT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Container -->
+    <div id="modalContainer" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div id="modalContent" class="bg-white rounded-xl p-6 max-w-md w-full mx-4 transform transition-all duration-300 scale-95 opacity-0">
+            <!-- Modal content will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg p-6 flex items-center space-x-3">
+            <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600"></div>
+            <span class="text-gray-700">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="landing.js"></script>
+</body>
+</html> 

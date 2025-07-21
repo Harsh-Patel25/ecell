@@ -1,0 +1,422 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-Cell SIT - Entrepreneurship Cell</title>
+        <meta name="description" content="Join the Entrepreneurship Cell at Saffrony Institute of Technology. Learn, innovate, and build your startup journey with us.">
+        
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="landing.css">
+    </head>
+    <body class="font-['Inter']">
+        <!-- Navigation -->
+        <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-lg transition-all duration-300">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <!-- Logo -->
+                    <div class="flex items-center space-x-2">
+                        <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-rocket text-white text-xl"></i>
+                        </div>
+                        <span class="text-xl font-bold text-gray-900">E-Cell SIT</span>
+                    </div>
+
+                    <!-- Desktop Navigation -->
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Home</a>
+                        <a href="/Pages/about.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300" target="_blank">About</a>
+                        <a href="#events" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Events</a>
+                        <a href="#team" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Team</a>
+                        <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Contact</a>
+                        <button id="joinBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105">
+                            Join Us
+                        </button>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuBtn" class="md:hidden text-gray-700 hover:text-blue-600 transition-colors duration-300">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <div id="mobileMenu" class="md:hidden hidden">
+                    <div class="py-4 space-y-4 border-t border-gray-200">
+                        <a href="#home" class="mobile-nav-link block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Home</a>
+                        <a href="#about" class="mobile-nav-link block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">About</a>
+                        <a href="#events" class="mobile-nav-link block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Events</a>
+                        <a href="#team" class="mobile-nav-link block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Team</a>
+                        <a href="#contact" class="mobile-nav-link block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Contact</a>
+                        <button id="mobileJoinBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300">
+                            Join Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700">
+            <div class="absolute inset-0 bg-black/20"></div>
+            <div class="container mx-auto px-4 text-center text-white relative z-10">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Dream. Create. 
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">Inspire.</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
+                    Join the Entrepreneurship Cell at Saffrony Institute of Technology. 
+                    Transform your ideas into reality and build the future of innovation.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button id="learnMoreBtn" class="bg-white text-blue-600 hover:bg-gray-100 font-semibold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+                        <i class="fas fa-info-circle mr-2"></i>Learn More
+                    </button>
+                    <button id="applyNowBtn" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+                        <i class="fas fa-rocket mr-2"></i>Apply Now
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <i class="fas fa-chevron-down text-white text-2xl"></i>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">About E-Cell SIT</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        We are the driving force behind innovation and entrepreneurship at Saffrony Institute of Technology.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-lightbulb text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Innovation</h3>
+                        <p class="text-gray-600">Fostering creative thinking and innovative solutions to real-world problems.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-users text-purple-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Community</h3>
+                        <p class="text-gray-600">Building a strong network of entrepreneurs, mentors, and industry experts.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-chart-line text-green-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Growth</h3>
+                        <p class="text-gray-600">Providing opportunities for personal and professional development.</p>
+                    </div>
+                </div>
+
+                <div class="mt-16 text-center">
+                    <button id="missionBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+                        <i class="fas fa-eye mr-2"></i>Our Mission & Vision
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Upcoming Events</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Join our exciting events and workshops to enhance your entrepreneurial skills.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
+                            <i class="fas fa-laptop-code text-white text-4xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Startup Workshop</h3>
+                            <p class="text-gray-600 mb-4">Learn the fundamentals of building a successful startup from industry experts.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-500">Dec 15, 2024</span>
+                                <button class="event-register-btn bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300" data-event="Startup Workshop">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="h-48 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center">
+                            <i class="fas fa-pitch text-white text-4xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Pitch Competition</h3>
+                            <p class="text-gray-600 mb-4">Present your innovative ideas and win exciting prizes worth ₹50,000.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-500">Dec 20, 2024</span>
+                                <button class="event-register-btn bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300" data-event="Pitch Competition">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="h-48 bg-gradient-to-r from-orange-500 to-red-600 flex items-center justify-center">
+                            <i class="fas fa-network-wired text-white text-4xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Networking Meet</h3>
+                            <p class="text-gray-600 mb-4">Connect with successful entrepreneurs and expand your professional network.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-500">Dec 25, 2024</span>
+                                <button class="event-register-btn bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300" data-event="Networking Meet">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <button id="viewAllEventsBtn" class="bg-gray-900 hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+                        <i class="fas fa-calendar-alt mr-2"></i>View All Events
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        The passionate individuals driving innovation and entrepreneurship at E-Cell SIT.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-32 h-32 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-user text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Dhruv Mavani</h3>
+                        <p class="text-blue-600 font-semibold mb-2">President</p>
+                        <p class="text-gray-600 text-sm">Leading the vision and strategy of E-Cell SIT</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-32 h-32 bg-gradient-to-r from-green-500 to-teal-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-user text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Mihir Joshi</h3>
+                        <p class="text-green-600 font-semibold mb-2">Vice President</p>
+                        <p class="text-gray-600 text-sm">Overseeing operations and team coordination</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-32 h-32 bg-gradient-to-r from-orange-500 to-red-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-user text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Arnav Patel</h3>
+                        <p class="text-orange-600 font-semibold mb-2">Tech Head</p>
+                        <p class="text-gray-600 text-sm">Managing technical initiatives and digital presence</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-32 h-32 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-user text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Astha Sadhu</h3>
+                        <p class="text-purple-600 font-semibold mb-2">Events Head</p>
+                        <p class="text-gray-600 text-sm">Organizing events and managing partnerships</p>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <button id="meetTeamBtn" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+                        <i class="fas fa-users mr-2"></i>Meet Full Team
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Ready to start your entrepreneurial journey? Contact us today!
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Address</h4>
+                                    <p class="text-gray-600">Saffrony Institute of Technology, Linch, Gujarat</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-envelope text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Email</h4>
+                                    <p class="text-gray-600">sit.ecell@saffrony.ac.in</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-phone text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Phone</h4>
+                                    <p class="text-gray-600">+91 7046461000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <h4 class="font-semibold text-gray-900 mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center text-white hover:bg-blue-500 transition-colors duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center text-white hover:bg-pink-700 transition-colors duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center text-white hover:bg-blue-800 transition-colors duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
+                        <form id="contactForm" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
+                                <i class="fas fa-paper-plane mr-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div>
+                        <div class="flex items-center space-x-2 mb-4">
+                            <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-rocket text-white"></i>
+                            </div>
+                            <span class="text-xl font-bold">E-Cell SIT</span>
+                        </div>
+                        <p class="text-gray-400">Empowering students to become successful entrepreneurs through innovation and collaboration.</p>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About</a></li>
+                            <li><a href="#events" class="text-gray-400 hover:text-white transition-colors duration-300">Events</a></li>
+                            <li><a href="#team" class="text-gray-400 hover:text-white transition-colors duration-300">Team</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Events</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Startup Workshop</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Pitch Competition</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Networking Meet</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Hackathon</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                        <p class="text-gray-400 mb-4">Stay updated with our latest events and opportunities.</p>
+                        <form id="newsletterForm" class="flex">
+                            <input type="email" placeholder="Your email" required class="flex-1 px-4 py-2 rounded-l-lg border-0 focus:ring-2 focus:ring-blue-500 text-gray-900">
+                            <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg transition-colors duration-300">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                    <p class="text-gray-400">&copy; 2024 E-Cell SIT. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modal Container -->
+        <div id="modalContainer" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+            <div id="modalContent" class="bg-white rounded-xl p-6 max-w-md w-full mx-4 transform transition-all duration-300 scale-95 opacity-0">
+                <!-- Modal content will be dynamically inserted here -->
+            </div>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+            <div class="bg-white rounded-lg p-6 flex items-center space-x-3">
+                <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600"></div>
+                <span class="text-gray-700">Loading...</span>
+            </div>
+        </div>
+
+        <!-- Custom JavaScript -->
+        <script src="landing.js"></script>
+    </body>
+    </html>
